@@ -94,8 +94,8 @@ struct Student
     std::map<string, Score> RecordBook;
 };
 
-// в качестве ключа - название группы
-// в качестве значения - список студентов
+// Гў ГЄГ Г·ГҐГ±ГІГўГҐ ГЄГ«ГѕГ·Г  - Г­Г Г§ГўГ Г­ГЁГҐ ГЈГ°ГіГЇГЇГ»
+// Гў ГЄГ Г·ГҐГ±ГІГўГҐ Г§Г­Г Г·ГҐГ­ГЁГї - Г±ГЇГЁГ±Г®ГЄ Г±ГІГіГ¤ГҐГ­ГІГ®Гў
 using Groups = std::map<std::string, std::vector<Student>>;
 void saveToFileGroups(const string& filename, const Groups& groups)
 {
@@ -166,26 +166,3 @@ int main() {
     loadFromFileGroups(filename, g2);
     return 0;
 }
-
-
-
-
-
-
-
-
-
-//int main()
-//{
-//    vector<string>m1={"i","am","eating"};
-//    vector<string>k2;
-//    string filename ="fail1.txt";
-//    string filename1 ="fail2.txt";
-//    saveToFile(filename,m1);
-//    loadFromFile(filename,m1);
-//    Book k1= {"Jane Austin","Pride and Prejudice",1813};
-//    saveToFileB(filename1,k1);
-//    loadFromFileB(filename1,k2);
-//
-//    return 0;
-//}
